@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Porfolio | Asish Kumar Sahoo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+<style>
+    .space {
+        gap: 80px;
+        margin-right: 30px;
+    }
+
+    body {
+        height: 100vh;
+        background: linear-gradient(45deg, #0a0f2e, #041929);
+    }
+
+    .home {
+        display: flex;
+        height: 100vh;
+    }
+
+    .hero {
+        color: white;
+        margin-top: 290px;
+        margin-left: 80px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .hero h1 {
+        transform: scaleY(1.3);
+        transform-origin: bottom;
+    }
+
+    .hero span {
+        font-size: 40px;
+        width: 100px;
+    }
+
+    .typing-effect {
+        font-size: 1.5rem;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        text-shadow: 0 0 10px white, 0 0 20px white;
+        white-space: nowrap;
+        border-right: 2px solid white;
+        overflow: hidden;
+        display: inline-block;
+        animation: typing 4s steps(22) 1s infinite alternate,
+            blink 0.7s infinite;
+    }
+
+    @keyframes typing {
+        0% {
+            width: 0ch;
+        }
+
+        50% {
+            width: 22ch;
+        }
+
+        100% {
+            width: 0ch;
+        }
+    }
+
+    @keyframes blink {
+
+        0%,
+        100% {
+            border-color: transparent;
+        }
+
+        50% {
+            border-color: white;
+        }
+    }
+
+    .hero2 {
+        margin-top: 130px;
+        margin-left: 70px;
+        border-left: 2px solid #263176;
+        height: 500px;
+    }
+
+    img {
+        animation: imgglow 2s infinite;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .hero3 p {
+        font-family: emoji;
+        font-size: 35px;
+    }
+
+    .aboutme,
+    .hero4 h1 {
+        animation: imgglow 2s infinite;
+    }
+
+    .glow {
+        animation: imgglow 2s infinite;
+    }
+
+    li :hover {
+        animation: imgglow 2s infinite;
+    }
+
+    @keyframes imgglow {
+
+        0%,
+        90%,
+        100% {
+            filter: drop-shadow(0 0 5px white);
+        }
+
+        50% {
+            filter: drop-shadow(0 0 10px white);
+        }
+    }
+
+    .skills {
+        margin-top: 10px;
+    }
+
+    .boxes {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .box1 {
+        background: linear-gradient(125deg, #051629, #0b3362);
+        margin: 20px 50px;
+        width: 500px;
+        height: 250px;
+        border: 2px solid white;
+        border-radius: 20px;
+    }
+
+    .box1:hover {
+        animation: imgglow 2s infinite;
+    }
+
+    .headTag {
+        margin-top: 10px;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+
+    .project {
+        height: 100vh;
+        background-color: transparent;
+    }
+
+    .header {
+        position: relative;
+        top: 70px;
+    }
+
+    .list {
+        margin-top: 120px;
+        width: 1020px;
+        font-size: 18px;
+        margin-left: 250px;
+    }
+
+    @media screen and (max-width: 991px) {
+        .home {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .hero {
+            margin: 0;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+        }
+
+        .typing-effect {
+            font-size: 1.2rem;
+        }
+
+        .hero2 {
+            margin: 0;
+            padding: 20px;
+            border-left: none;
+            height: auto;
+        }
+
+        .hero2 img {
+            width: 60%;
+            max-width: 300px;
+        }
+
+        .about {
+            flex-direction: column;
+            height: auto;
+            padding: 40px 20px;
+        }
+
+        .hero3 p {
+            font-size: 22px;
+        }
+
+        .boxes {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box1 {
+            width: 90%;
+            height: auto;
+            margin: 20px 0;
+            padding: 10px;
+        }
+
+        .list {
+            width: 90%;
+            margin: 60px auto 0 auto;
+            font-size: 16px;
+        }
+
+        .navbar-nav {
+            gap: 10px;
+        }
+
+        .space {
+            margin-right: 0;
+            gap: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .hero h1 {
+            font-size: 28px;
+        }
+
+        .typing-effect {
+            font-size: 1rem;
+        }
+
+        .hero2 img {
+            width: 80%;
+            max-width: 250px;
+        }
+
+        .hero3 p {
+            font-size: 18px;
+        }
+
+        .headTag {
+            font-size: 24px;
+        }
+
+        .box1 ul li {
+            font-size: 14px;
+        }
+
+        .navbar-brand {
+            font-size: 18px;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 16px;
+        }
+
+        .aboutme {
+            font-size: 26px;
+        }
+
+        .project h1 {
+            font-size: 28px;
+        }
+
+        .list h4 {
+            font-size: 18px;
+        }
+
+        .list ul li {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid fw-bold">
+            <a class="navbar-brand text-white ms-3" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end space" id="navbarNav">
+                <ul class="navbar-nav space">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#projects">Projects</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="home " id="home">
+        <div class="hero">
+            <h1>Hi, I am Asish Kumar Sahoo</h1>
+            <span class="typing-effect">Frontend Developer</span>
+        </div>
+
+        <div class="hero2">
+            <img src="assects/image.png" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="hero3 text-center w-75 mx-auto p-3 text-white">
+            <h1 class="p-5 fw-bolder aboutme">About Me</h1>
+            <p> Hello! I'm Asish Kumar Sahoo, a passionate and detail-oriented Frontend Developer with a strong
+                foundation in web development and UI/UX design. I recently completed my B.Tech and am now eagerly
+                stepping into the professional world to transform ideas into beautiful, functional, and user-friendly
+                digital experiences.</p>
+            <p>I've been fascinated by the web—how it works, how it looks, and how people interact with it. This
+                curiosity led me to dive deep into HTML, CSS, JavaScript, and modern frontend frameworks. I enjoy
+                solving problems and bringing designs to life with clean, maintainable code.</p>
+
+        </div>
+    </section>
+    <section class="Skills" id="skills">
+        <div class="hero4 ms-auto mt-4 p-4 text-white">
+            <h1 class="text-center skills mt-5">Skills</h1>
+            <div class="boxes">
+                <div class="box1">
+                    <h3 class="headTag text-center">Frontend</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="box1">
+                    <h3 class="headTag text-center">Language</h3>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>Java</li>
+                        <li>Dart</li>
+                    </ul>
+                </div>
+                <div class="box1">
+                    <h3 class="headTag text-center">Database</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box1">
+                    <h3 class="headTag text-center">Tools</h3>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Eclipse</li>
+                        <li>Android Studio</li>
+                        <li>GitHub</li>
+                        <li>Canva</li>
+                        <li>Adobe Photoshop</li>
+                    </ul>
+                </div>
+                <div class="box1">
+                    <h3 class="headTag text-center">Core Subject</h3>
+                    <ul>
+                        <li>Data Structure</li>
+                        <li>OOPS</li>
+                    </ul>
+                </div>
+                <div class="box1">
+                    <h3 class="headTag text-center">Framework</h3>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>Tailwind CSS</li>
+                        <li>Flutter</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <section class="project" id="projects">
+        <div class="header">
+            <h1 class="text-center text-white glow">Project</h1>
+        </div>
+        <div>
+            <div class="text-white list">
+                <h4 style="text-decoration: underline;">Portfolio</h4>
+                <p>
+                <ul>
+                    <li>Eveloped a responsive personal portfolio website using HTML, CSS, and style tag for
+                        inline
+                        styling</li>
+                    <li>Developed a personal portfolio website to showcase projects and skills.</li>
+                    <li>Showcased professional skills, projects, and contact information.</li>
+                    <li>Designed a structured layout with sections like "About Me," "Projects," and "Contact,"
+                        ensuring easy navigation for users</li>
+                </ul>
+                </p>
+                <h4 id="todolist" style="text-decoration: underline;">ToDo List</h4>
+                <p>
+                <ul>
+                    <li>Implemented features like create, delete, and edit task</li>
+                    <li>Designed a clean, user-friendly interface using HTML, CSS and JavaScript for a
+                        consistent
+                        and pleasant user experience.</li>
+                    <li>Developed a fully responsive web application by using BootStrap framework</li>
+                </ul>
+                </p>
+                <h4 id="bmi" style="text-decoration: underline;">BMI Calculator Application</h4>
+                <p>
+                <ul>
+                    <li>A cross-platform mobile application developed using Flutter to calculate and display
+                        Body
+                        Mass Index (BMI), enabling users to assess their weight-to-height ratio conveniently.
+                    </li>
+                    <li>Designed and implemented a user-friendly UI following Material Design principles for
+                        seamless navigation across Android and iOS devices.</li>
+                    <li>Using Flutter Framework (Dart) for front-end development.</li>
+                    <li>Using Development Tools like Android Studio</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
